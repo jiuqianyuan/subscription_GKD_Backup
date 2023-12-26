@@ -22,7 +22,7 @@ const globalGroups: RawGlobalGroup[] = [
     key: 0,
     name: '开屏广告',
     actionMaximum: 1,
-    matchTime: 10000,
+    matchTime: 5000,
     resetMatch: 'app',
     actionCdKey: 0,
     actionMaximumKey: 0,
@@ -30,13 +30,13 @@ const globalGroups: RawGlobalGroup[] = [
       {
         key: 0,
         quickFind: true,
-        matches: '[text*="跳过"][text.length<10]',
+        matches: '[text*="跳过"][text.length<10][width<300&&height<300][bottom<300||top>1600]',
         action: 'clickCenter',
       },
       {
         key: 1,
         matches:
-          '[(text.length<10&&(text*="跳过"||text*="skip")) || id$="tt_splash_skip_btn" || desc*="跳过" || desc*="skip"]',
+          '[(text.length<10&&(text*="跳过"||text*="skip")) || id$="tt_splash_skip_btn" || desc*="跳过" || desc*="skip"][width<300&&height<300][bottom<300||top>1600]',
         action: 'clickCenter',
       },
     ],
