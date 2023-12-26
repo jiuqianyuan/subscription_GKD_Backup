@@ -30,7 +30,8 @@ const globalGroups: RawGlobalGroup[] = [
       {
         key: 0,
         quickFind: true,
-        matches: '[text*="跳过"][text.length<10][width<300&&height<300][bottom<300||top>1600]',
+        matches:
+          '[text*="跳过"][text.length<10][width<300&&height<300][bottom<300||top>1600]',
         action: 'clickCenter',
       },
       {
