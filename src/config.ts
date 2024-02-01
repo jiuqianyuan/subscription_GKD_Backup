@@ -7,12 +7,12 @@ const subsConfig: RawSubscription = {
   id: 0,
   version: 0,
   name: '默认订阅',
-  author: 'lisonge',
-  supportUri: 'https://github.com/gkd-kit/subscription',
+  author: 'jiuqianyuan',
+  supportUri: 'https://github.com/jiuqianyuan/subscription',
   updateUrl:
-    'https://registry.npmmirror.com/@gkd-kit/subscription/latest/files',
+    'https://cdn.jsdelivr.net/gh/jiuqianyuan/subscription@tewst/dist/gkd.json5',
   checkUpdateUrl:
-    'https://registry.npmmirror.com/@gkd-kit/subscription/latest/files/dist/gkd.version.json',
+    'https://cdn.jsdelivr.net/gh/jiuqianyuan/subscription@tewst/dist/gkd.version.json',
   globalGroups,
   categories,
   apps,
